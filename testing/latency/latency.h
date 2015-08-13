@@ -34,7 +34,7 @@
 
 // Data rates
 #define EVENTS_GENERATED_PER_TICK 100   // simulate some small bursting 
-#define EVENT_GENERATION_FREQUENCY 100  // events/s base rate, need to use busy loop = 1 if > 100Hz due to nanosleep resolution 
+#define EVENT_GENERATION_FREQUENCY 10  // events/s base rate, need to use busy loop = 1 if > 100Hz due to nanosleep resolution 
 
 #define AGGREGATE_DATA_RATE_PER_SECOND (EVENT_GENERATION_FREQUENCY * EVENTS_GENERATED_PER_TICK)
 #define EVENTS_TO_GENERATE (SECONDS_TO_RUN * AGGREGATE_DATA_RATE_PER_SECOND)
