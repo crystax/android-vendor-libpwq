@@ -73,11 +73,11 @@ extern char *WORKQUEUE_DEBUG_IDENT;
 # endif
 
 #else /* NDEBUG */
-# define dbg_puts(str)           ;
-# define dbg_printf(fmt,...)     ;
-# define dbg_perror(str)         ;
-# define dbg_lasterror(str)      ;
-# define reset_errno()           ;
+# define dbg_puts(str)           do {} while (0)
+# define dbg_printf(fmt,...)     do {} while (0)
+# define dbg_perror(str)         do {} while (0)
+# define dbg_lasterror(str)      do {} while (0)
+# define reset_errno()           do {} while (0)
 #endif 
 
 #endif  /* ! _DEBUG_H */
