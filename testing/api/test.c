@@ -14,7 +14,9 @@
 # include "../../src/windows/platform.h"
 # include "posix_semaphore.h"
 #endif
-#include "../../src/private.h"
+
+#include <pthread.h>
+#include <unistd.h>
 
 #if HAVE_ERR_H
 # include <err.h>
