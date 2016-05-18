@@ -44,6 +44,10 @@
 #else
 # define CONSTRUCTOR __attribute__ ((constructor))
 #endif
+#if __CRYSTAX__
+#undef CONSTRUCTOR
+#define CONSTRUCTOR
+#endif
 #define VISIBLE     __attribute__((visibility("default")))
 
 /*
